@@ -1,0 +1,138 @@
+
+.parallax {
+	height: 100vh;
+	overflow-x: hidden;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+	background-color: #000000;
+}
+.parallax__group {
+	height: 100vh;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	text-align: center;
+	vertical-align: middle;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.parallax__layer--deep {
+	height: 100vh;
+	background-size: 100%;
+	-webkit-transform: translateZ(-600px) scale(3);
+	transform: translateZ(-600px) scale(3);
+
+}
+.parallax__layer--back {
+	height: 100vh;
+	background: rgba(255,0,0,0.3);
+	-webkit-transform: translateZ(-300px) scale(2);
+	transform: translateZ(-300px) scale(2);
+}
+.parallax__layer--preback {
+	height: 100vh;
+	-webkit-transform: translateZ(-50px) scale(1.2);
+	transform: translateZ(-50px) scale(1.2);
+}
+.parallax__layer--base {
+	height: 100vh;
+	width: 100%;
+	background: #f8f8f8;
+	-webkit-transform: translateZ(0px);
+	transform: translateZ(0px);
+	box-shadow: 0px 0px 64px 0px rgba(0,0,0,0.5);
+	vertical-align: middle;
+	text-align: center;
+}
+.parallax__layer--front {
+	height: 100vh;
+	background: rgba(0,0,255,0.3);
+	-webkit-transform: translateZ(200px) scale(.33333);
+	transform: translateZ(200px) scale(.33333);
+}
+
+#group0 {
+	z-index: 0;
+}
+#group1 {
+	z-index: 2;
+}
+#group2 {
+	z-index: 1;
+}
+#group3 {
+	z-index: 3;
+}
+#group4 {
+	z-index: 0;
+	height: 0px;
+}
+#group5 {
+	z-index: 1;
+	height: 50vh;
+}
+
+img.bg {
+    position: absolute;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+#deep_0 {
+	background-image: url(../img/9.jpg);
+	background-size: 100%;
+	background-position: top left;
+	background-color: #2F7DBD;
+	background-repeat: no-repeat;
+}
+#base_0 {
+	height: 40vh;
+	margin-top: 30vh;
+}
+#back_1 {
+	height: 60vh;
+	margin-top: 15vh;
+	background-image: url(../img/good.jpg);
+	background-size: 100%;
+	background-position: top;
+}
+#base_1 {
+	height: 100vh;
+	background: none;
+}
+#back_2 {
+	background-image: url(../img/3.jpg);
+	background-size: 100%;
+	background-position: center;
+}
+#base_2 {
+	height: 50vh;
+	margin-top: 25vh;
+}
+#back_4 {
+	height: 100vh;
+	background-image: url(../img/9.jpg);
+	background-size: 100%;
+	background-position: bottom;
+}
+#base_5 {
+	margin-top: 50vh;
+}
+
+#we_0 {
+	height: 20%;
+	background-color: #f8f8f8;
+}
+#we_1 {
+	height: 50%;
+	width: 0px;
+	display: inline-block;
+}
+#we_2 {
+	height: 30%;
+	background-color: #f8f8f8;
+}

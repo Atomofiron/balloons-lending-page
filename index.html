@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Доставка шариков по Ростову-на-Дону</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link href="css/parallax.css" type="text/css" rel="stylesheet">
+<link href="css/ui.css" type="text/css" rel="stylesheet">
+<link href="css/portrait.css" type="text/css" rel="stylesheet">
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var px = "px"
+var clog = console.log
+function get(id) {
+	return document.getElementById(id)
+}
+function ceil(x) {
+	if (x < 0)
+		x-- // иначе не доезжает вверх
+	return Math.ceil(x) 
+}
+</script>
+</head>
+<body>
+<!-- Yandex.Metrika counter -- ЭТО НУЖНО, потом
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter14907220 = new Ya.Metrika({
+                    id:14907220,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/14907220" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+-- /Yandex.Metrika counter -->
+
+
+<div id=splash>
+	<div style="font-size: 48pt;" id=noscript>
+		У вас отключёна поддержка JavaScript! Включите её и перезагрузите страницу.
+	</div>
+	<div style="font-size: 48pt; display: none;" id=wtfscript>
+		У вас какая-то фигня с JavaScript! Смените браузер.
+	</div>
+
+	<script type="text/javascript">	
+	get("noscript").style.display = "none"
+	get("wtfscript").style.display = "block"
+	</script>
+</div>
+
+
+<div id=window class=card>
+	<div class="close" onclick="showWindow(false)">X</div>
+	<div id=form-sent-window>Наш специалист свяжется<br>с вами в ближайшее время</div>
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSfHpayAOcZkgsZHslrgJqRI5UQvqlniCw11PbCrKXoaLMJFbA/formResponse" id="gform-jquery-window">
+		Закажи Звонок!<br><br>
+		<input class=req type=text name="entry.1095365213" placeholder=Имя><br>
+		<input class=req type=number name="entry.2074457308" placeholder=Телефон><br>
+		<input class=req type="text" name="entry.497202241" placeholder="Время для звонка"><br>
+
+		<input type="hidden" name="entry.1296286551" id=input_balls_type><br>
+		<input type="hidden" name="fvv" value="1">
+		<input type="hidden" name="draftResponse" value="[,,&quot;-623219271254860236&quot;]">
+		<input type="hidden" name="pageHistory" value="0">
+		<input type="hidden" name="fbzx" value="-623219271254860236">
+
+		<button type="submit" class=button>Отправить</button>
+	</form>
+</div>
+
+<div id=navbarghost onmouseout="showNavbar(false)" onmouseover="showNavbar(true)">
+<div id=navbar>
+	<ul id=menu>
+		<li onclick="moveTo(0)">Главная</li>
+		<li onclick="moveTo(1)">Преимущества</li>
+		<li onclick="moveTo(2)">О нас</li>
+		<li onclick="moveTo(3)">Каталог</li>
+		<li onclick="moveTo(4)">Отзывы</li>
+	</ul>
+	<img src=img/burger.png id=navbutton onclick="showMenu()" />
+	<div onclick="showWindow(true, 'Заказать звонок')" class="button button-green">Заказать звонок</div>
+</div>
+</div>
+
+<div class=parallax id=parallax onscroll="scroll()">
+	<div class=parallax__group id=group0>
+		<div class="parallax__layer parallax__layer--deep" id=deep_0></div>
+		<div class="parallax__layer parallax__layer--base" id=base_0>
+	<div class=wrap><div class=wrap>
+		<div class=title>Доставка шариков по Ростову-на-Дону</div>
+		<div class=desc>Мы сумеем в минимальные сроки превратить<br> сухой и грязный день в яркий и сказочный праздник</div>
+	</div></div>
+		</div>
+	</div>
+	<div class=parallax__group id=group1>
+		<div class="parallax__layer parallax__layer--preback" id=back_1>
+		</div>
+		<div class="parallax__layer parallax__layer--base" id=base_1>
+			<div id=we_0><div class=wrap><div class="title wrap">Почему именно мы?</div></div></div>
+			<div id=we_1></div>
+			<div id=we_2>
+	<div class=wrap><div class=wrap>
+					<div class=icon-box>
+						<img class=icon src=svg/baks.svg /><br>
+						Низкие цены
+					</div>
+					<div class=icon-box>
+						<img class=icon src=svg/plane.svg /><br>
+						Доставка в срок
+					</div>
+					<div class=icon-box>
+						<img class=icon src=svg/star.svg /><br>
+						Гарантия качества
+					</div>
+					<div class=icon-box>
+						<img class=icon src=svg/smile.svg /><br>
+						Хорошее настроение
+					</div>
+	</div></div>
+			</div>
+		</div>
+	</div>
+	<div class=parallax__group id=group2>
+		<div class="parallax__layer parallax__layer--back" id=back_2></div>
+		<div class="parallax__layer parallax__layer--base" id=base_2>
+			<div class=title>Как мы работаем</div>
+
+		<div class=sense>
+				<div class=icon-box>
+					<img class=icon src=svg/call.svg /><br>
+					Принимаем заявку
+				</div>
+				<div class=icon-box>
+					<img class=icon src=svg/ball.svg /><br>
+					Формируем заказ
+				</div>
+		</div>
+		<div class=sense>
+				<div class=icon-box>
+					<img class=icon src=svg/loc.svg /><br>
+					Доставляем шарики
+				</div>
+				<div class=icon-box>
+					<img class=icon src=svg/mony.svg /><br>
+					Принимаем оплату
+				</div>
+		</div>
+		</div>
+	</div>
+	<div class=parallax__group id=group3>
+		<div class="parallax__layer parallax__layer--base" id=base_3><div class="title">Сделайте заказ прямо сейчас</div>
+		<div class=sense>
+					<div class="card shopping_card">
+						Однотонные<br>
+						<img src=img/shop0.jpg /><br>
+						от <b>20 руб.</b><br>
+						<div class=button onclick="showWindow(true, 'Однотонные')">Оформить заказ</div>
+					</div>
+					<div class="card shopping_card">
+						С рисунком<br>
+						<img src=img/shop1.jpg /><br>
+						от <b>40 руб.</b><br>
+						<div class=button onclick="showWindow(true, 'С рисунком')">Оформить заказ</div>
+					</div>
+		</div>
+		<div class=sense>
+					<div class="card shopping_card">
+						Сердца<br>
+						<img src=img/shop2.jpg /><br>
+						от <b>40 руб.</b><br>
+						<div class=button onclick="showWindow(true, 'Сердца')">Оформить заказ</div>
+					</div>
+					<div class="card shopping_card">
+						Фольгированные<br>
+						<img src=img/shop3.jpg /><br>
+						от <b>45 руб.</b><br>
+						<div class=button onclick="showWindow(true, 'Фольгированные')">Оформить заказ</div>
+					</div>
+		</div>
+
+		<div class="title">Или оставьте свои контакты <br>и мы свяжемся с вами</div></div>
+	</div>
+	<div class=parallax__group id=group4>
+		<div class="parallax__layer parallax__layer--back" id=back_4></div>
+	</div>
+	<div class=parallax__group id=group5>
+		
+		<form action="https://docs.google.com/forms/d/e/1FAIpQLSeYzTanAhCmfgftkd3O9bYXX7AiDKuM21KsFqQtYMlj3yDqtw/formResponse" id="gform-jquery">
+			<input class=req type=text name="entry.1095365213" placeholder=Имя><br>
+			<input class=req type=text name="entry.284984216" placeholder=Почта><br>
+			<input class=req type=number name="entry.2074457308" placeholder=Телефон><br>
+
+			<input type="hidden" name="fvv" value="1">
+			<input type="hidden" name="draftResponse" value="[,,&quot;-623219271254860236&quot;]">
+			<input type="hidden" name="pageHistory" value="0">
+			<input type="hidden" name="fbzx" value="-623219271254860236">
+
+			<button type="submit" class=button>Отправить</button>
+		</form>
+		<div id=form-sent>Наш специалист свяжется<br>с вами в ближайшее время</div>
+
+
+		<div class="parallax__layer parallax__layer--base" id=base_5>
+			<div class="title">Отзывы</div>
+			<center>
+			<div class="card feedback_card">
+				<div class=name><img src=img/karp.png />Андрей<br>Карпов</div>
+				<div class=text>
+					Заказывал шары девушке на день рождения. Доставили вовремя, шарики клёвые! Все прошло шикарно, спасибо вам!
+				</div>
+			</div>
+
+			<div class="card feedback_card">
+				<div class=name><img src=img/kate.png />Екатерина<br>Иванова</div>
+				<div class=text>
+					Всё быстро и качественно. Порадовал сервис и оперативность. Доставили в мой родной "край", чем была приятно удивлена.
+				</div>
+			</div>
+
+			<div class="card feedback_card">
+				<div class=name><img src=img/sery.png />Сергей<br>Ряднов</div>
+				<div class=text>
+					Очень быстро выполнили заказ, в срок и как положено. В дальнейшем только к вам буду обращаться и друзьям порекомендую.
+				</div>
+			</div>
+			</center>
+
+			<table id=footer>
+				<tr>
+					<td id=footer-left>
+						Доставка осуществляется в любой район Ростова-на-Дону<br>
+						Работаем круглосуточно!<br>
+						Прием заявок до с 6:00 до 00:00<br>
+						Мы всегда готовы вам помочь!<br>
+						Мы находимся по адресу: Б.Садовая 106\46
+					</td>
+					<td id=footer-right>
+						SovaSHar@yandex.ru<br>
+						<font size="+2">+7 (952) 568-68-86</font><br>
+						<div class="button button-green" onclick="showWindow(true, 'Заказать звонок')">Заказать звонок</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2>
+						<font class=unhoverable size=3>&copy; Нестеров Я. В., оформление сайта, 2017</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src=js/main.js></script>
+</body>
+</html>

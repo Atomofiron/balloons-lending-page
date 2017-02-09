@@ -1,0 +1,116 @@
+/* стили с классом portrait предназначены для отображения на вертикальном экране */
+
+
+.portrait #deep_0, .portrait #back_1, .portrait #back_2, .portrait #back_4 {
+	background-size: auto 100%; /* выравниваем фон по вертикильным границам */
+}
+.portrait #back_4 {
+	background-position: top;
+}
+
+
+.portrait .button {
+	font-size: 24pt;
+}
+
+
+.portrait #navbar .button {
+	font-size: 48pt;
+}
+.portrait ul { /* делаем меню вертикальным */
+	width: inherit;
+	background-color: #f8f8f8;
+	position: absolute;
+	left: 0px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+	top: 100%;
+}
+.portrait ul li {
+	display: block !important;
+	text-align: left;
+	font-size: 64pt;
+}
+.portrait #navbutton {
+	display: inline-block;
+}
+.portrait #menu {
+	top: -100vh; /* изначально скрываем меню */
+}
+
+
+.portrait .title {
+	padding: .5em 1em .5em 1em !important;
+	font-size: 36pt;
+}
+.portrait .desc {
+	font-size: 24pt;
+}
+
+.sense {
+	width: 49%;
+	height: 60%;
+	display: inline-block;
+}
+
+.portrait .sense { /* sense блоки при портрете переносятся на разные строчки */
+	width: 100%;
+	height: 40%;
+	display: block !important;
+}
+
+.sense .icon-box {
+	width: 45%;
+	height: 100%;
+}
+.portrait .icon-box {
+	font-size: 24pt;
+}
+.portrait .icon {
+	width: 80%;
+}
+
+.portrait .shopping_card {
+	width: 40% !important;
+	height: 90% !important;
+	font-size: 24pt;
+}
+
+.portrait .shopping_card img {
+	height: 60% !important;
+}
+
+
+.portrait input {
+	width: 80%;
+	font-size: 36pt;
+}
+
+
+.portrait .feedback_card {
+	width: 90%;
+	height: 20% !important;
+	display: block !important;
+	padding-bottom: 4px;
+}
+
+.portrait .feedback_card .name {
+	font-size: 24pt;
+	margin-bottom: 64px;
+}
+.portrait .feedback_card .text {
+	font-size: 24pt;
+}
+.portrait #footer {
+	font-size: 24pt;
+}
+
+
+.portrait #window {
+	width: 100%;
+	left: 0px;
+	margin-left: 0px;
+	font-size: 36pt;
+}
+.portrait #window .close {
+	font-size: 36pt;
+}
