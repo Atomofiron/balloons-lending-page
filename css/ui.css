@@ -71,6 +71,7 @@ body {
 #navbarghost {
 	width: 100%;
 	position: absolute;
+	z-index: 1;
 }
 #navbar {
 	width: 100%;
