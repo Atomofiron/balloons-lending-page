@@ -96,9 +96,11 @@ img.bg {
 #back_1 {
 	height: 60vh;
 	margin-top: 15vh;
-	background-image: url(../img/good.jpg);
+	background-color: #f8f8f8;
+	background-image: url(../img/good_blur.jpg);
 	background-size: 100%;
 	background-position: top;
+	background-repeat: no-repeat;
 }
 #base_1 {
 	height: 100vh;

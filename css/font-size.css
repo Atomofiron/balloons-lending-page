@@ -1,0 +1,16 @@
+@media screen and (max-width: 1366px), screen and (max-height: 1280px) {
+	body, input, button {
+		font-size: 16pt;
+	}
+	body.portrait, input.portrait, button.portrait {
+		font-size: 24pt !important;
+	}
+}
+@media screen and (min-width: 1560px), screen and (min-height: 1920px) {
+	body, input, button {
+		font-size: 26pt;
+	}
+	body.portrait, input.portrait, button.portrait {
+		font-size: 29pt !important;
+	}
+}

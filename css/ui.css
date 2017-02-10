@@ -12,6 +12,9 @@ body {
 	font-family: Roboto;
 	user-select: none;
 }
+body, input, button {
+	font-size: 20pt;
+}
 
 ::-webkit-scrollbar { 
 	display: none;
@@ -137,13 +140,12 @@ body {
 .title {
 	text-align: center;
 	padding: 1em 1em 1em 1em;
-	font-size: 24pt;
 	font-weight: bold;
 	background-color: #f8f8f8;
+	font-size: 150%;
 }
 .desc {
 	text-align: center;
-	font-size: 16pt;
 }
 
 table {
@@ -164,7 +166,6 @@ table td {
 	height: 90%;
 	margin: 8px 1% 8px 1%;
 	text-align: center;
-	font-size: 16pt;
 	font-weight: bold;
 	padding-top: 8px;
 	display: inline-block;
@@ -196,16 +197,13 @@ table td {
 	border-radius: 5px 5px 0px 0px;
 	color: #ffffff;
 	margin-bottom: 72px;
-	font-size: 16pt;
 }
 .feedback_card .text {
 	margin: 16px;
-	font-size: 16pt;
 	text-align: left;
 }
 
 .button {
-	font-size: 16pt;
 	background-color: #cc1010;
 	color: #ffffff;
 	display: inline-block;
@@ -253,7 +251,6 @@ table td {
 	display: inline-block;
 	font-weight: bold;
 	text-align: center;
-	font-size: 14pt;
 }
 form {
 	padding: 2em;
@@ -263,7 +260,6 @@ form input {
 	background-color: #f8f8f8;
 	border: 1px solid transparent;
 	box-shadow: none;
-	font-size: 20pt;
 	padding: 4pt;
 	margin-bottom: 1em;
 	border-radius: 8px;
@@ -281,7 +277,6 @@ form input[type=hidden] {
 }
 #form-sent {
 	color: #ffffff;
-	font-size: 24pt;
 	display: none;
 	padding: 2em;
 	background: rgba(255,255,255,0.3);
@@ -310,7 +305,6 @@ form input[type=hidden] {
 	width: 24px;
 	float: right;
 	text-align: center;
-	font-size: 16px;
 	padding: 16pt;
 	cursor: pointer;
 }

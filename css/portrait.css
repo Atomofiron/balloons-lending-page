@@ -8,14 +8,8 @@
 	background-position: top;
 }
 
-
-.portrait .button {
-	font-size: 24pt;
-}
-
-
-.portrait #navbar .button {
-	font-size: 48pt;
+.portrait #navbar {
+	font-size: 200%;
 }
 .portrait ul { /* делаем меню вертикальным */
 	background-color: #f8f8f8;
@@ -28,7 +22,6 @@
 .portrait ul li {
 	display: block !important;
 	text-align: left;
-	font-size: 64pt;
 }
 .portrait #navbutton {
 	display: inline-block;
@@ -40,10 +33,6 @@
 
 .portrait .title {
 	padding: .5em 1em .5em 1em !important;
-	font-size: 36pt;
-}
-.portrait .desc {
-	font-size: 24pt;
 }
 
 .sense {
@@ -62,9 +51,6 @@
 	width: 45%;
 	height: 100%;
 }
-.portrait .icon-box {
-	font-size: 24pt;
-}
 .portrait .icon {
 	width: 80%;
 }
@@ -72,7 +58,6 @@
 .portrait .shopping_card {
 	width: 40% !important;
 	height: 90% !important;
-	font-size: 24pt;
 }
 
 .portrait .shopping_card img {
@@ -82,7 +67,6 @@
 
 .portrait input {
 	width: 80%;
-	font-size: 36pt;
 }
 
 
@@ -94,14 +78,9 @@
 }
 
 .portrait .feedback_card .name {
-	font-size: 24pt;
 	margin-bottom: 64px;
 }
-.portrait .feedback_card .text {
-	font-size: 24pt;
-}
 .portrait #footer {
-	font-size: 24pt;
 	padding: 0em;
 }
 
@@ -110,8 +89,4 @@
 	width: 100%;
 	left: 0px;
 	margin-left: 0px;
-	font-size: 36pt;
-}
-.portrait #window .close {
-	font-size: 36pt;
 }
