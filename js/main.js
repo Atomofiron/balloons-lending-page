@@ -109,13 +109,17 @@ function scroll() {
 	var curScrollTop = parallax.scrollTop
 	var dif = curScrollTop - lastScrollTop
 
-	lastScrollTop = curScrollTop
-	if (curScrollTop < bar.offsetHeight)
+	/*if (curScrollTop < bar.offsetHeight)
 		showNavbar(true)
 	else if (!portrait)
 		showNavbar(false)
 	else if (Math.abs(dif) > 3)
 		showNavbar(dif < 0)
+	ну не знаю, по-моему оч удобно было*/
+	if (portrait)
+		showNavbar(dif < 0)
+
+	lastScrollTop = curScrollTop
 }
 
 /* скрытие/отображение меню */
