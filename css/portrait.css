@@ -12,12 +12,13 @@
 	font-size: 200%;
 }
 .portrait ul { /* делаем меню вертикальным */
+	width: 100%;
 	background-color: #f8f8f8;
 	position: absolute;
 	left: 0px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 	top: 100%;
-	padding-right: 16px;
+	padding: 0px;
 }
 .portrait ul li {
 	display: block !important;

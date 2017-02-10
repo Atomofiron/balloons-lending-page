@@ -141,6 +141,4 @@ function showMenu(show) {
 	menu.showen = menu.style.top == on
 }
 
-var btn = get("navbutton")
-btn.style.paddingRight = bar.offsetWidth - btn.offsetWidth + px
 get("navbarghost").style.height = bar.clientHeight + px
