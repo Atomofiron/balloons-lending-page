@@ -2,8 +2,7 @@
 var portrait
 function updatePortraitState() { // определяем, что юзер со смартфона
 
-	portrait = window.innerWidth <= window.innerHeight * 0.8
-	clog(window.innerWidth +" x "+ window.innerHeight+" "+portrait)
+	portrait = window.innerWidth * 0.8 <= window.innerHeight
 	document.body.classList.toggle('portrait', portrait);
 	get("wtfscript").style.display = "none"
 }
