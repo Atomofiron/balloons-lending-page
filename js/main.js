@@ -99,7 +99,7 @@ function move() {
 		return
 	}
 	var dif = ceil((targetTop - parallax.scrollTop) / 10)
-	parallax.scrollTop = parallax.scrollTop + dif //+ Math.sign(dif)
+	parallax.scrollTop = parallax.scrollTop + dif - 1
 	setTimeout("move()", 20)
 }
 
