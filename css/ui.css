@@ -152,14 +152,6 @@ body, input, button {
 	text-align: center;
 }
 
-table {
-	width: 100%;
-}
-table td {
-	text-align: center;
-	width: 25%;
-}
-
 .card {
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -259,6 +251,9 @@ table td {
 form {
 	padding: 2em;
 }
+#base_0 form {
+	padding: 0em;
+}
 form input {
 	width: 320px;
 	background-color: #f8f8f8;
@@ -267,6 +262,9 @@ form input {
 	padding: 4pt;
 	margin-bottom: 1em;
 	border-radius: 8px;
+}
+#base_0 form input {
+	background-color: #eeeeee;
 }
 form input:focus {
 	border: 1px solid transparent;
@@ -279,14 +277,14 @@ form input.error {
 form input[type=hidden] {
 	margin: 0px 0px 0px 0px;
 }
-#form-sent {
+#group5 .form-sent {
 	color: #ffffff;
 	display: none;
 	padding: 2em;
 	background: rgba(255,255,255,0.3);
 	transition: all 3s linear;
 }
-#form-sent-window {
+#window .form-sent, #base_0 .form-sent {
 	color: #000000;
 	padding: 1em;
 	display: none;
@@ -313,6 +311,13 @@ form input[type=hidden] {
 	cursor: pointer;
 }
 
+#footer table {
+	width: 100%;
+}
+#footer table td {
+	text-align: center;
+	width: 25%;
+}
 #footer {
 	margin-top: 1em;
 	position: absolute;

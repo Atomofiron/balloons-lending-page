@@ -35,6 +35,9 @@
 .portrait .title {
 	padding: .5em 1em .5em 1em !important;
 }
+.portrait #base_0 form {
+	display: none;
+}
 
 .sense {
 	width: 49%;

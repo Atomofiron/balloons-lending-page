@@ -50,8 +50,9 @@ function submitForm(e) { // да да я скопипастил эту функ�
 
 function showSuccess(form) {
 	form[0].style.display = "none"
-
-	get(form[0].id == "gform-jquery" ? "form-sent" : "form-sent-window").style.display = "block"
+	var type = form.attr("type")
+	clog("TYPE "+type)
+	get("form-sent-"+type).style.display = "block"
 
     var inputs = form[0].getElementsByTagName('input');
     for (var i = 0; i < inputs.length; i++)
@@ -60,8 +61,9 @@ function showSuccess(form) {
 }
 
 $(document).ready(function() { // после загрузки DOM
-	$('#gform-jquery').submit(submitForm);
 	$('#gform-jquery-window').submit(submitForm);
+	$('#gform-jquery-top').submit(submitForm);
+	$('#gform-jquery-bottom').submit(submitForm);
 
 	get("splash").style.display = "none"
 });
