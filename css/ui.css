@@ -141,6 +141,17 @@ body, input, button {
 	vertical-align: middle;
 }
 
+#top-form-label {
+	position: absolute;
+	float: right;
+	right: 0px;
+	bottom: 0px;
+	margin-bottom: 40vh;
+	margin-right: 5%;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 8px;
+}
 .title {
 	text-align: center;
 	padding: 1em 1em 1em 1em;

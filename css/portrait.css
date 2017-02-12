@@ -32,6 +32,9 @@
 }
 
 
+.portrait #top-form-label {
+	display: none;
+}
 .portrait .title {
 	padding: .5em 1em .5em 1em !important;
 }
