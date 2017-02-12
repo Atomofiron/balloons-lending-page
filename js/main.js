@@ -1,5 +1,6 @@
 
 var portrait
+var imagesLoaded = false
 function updatePortraitState() { // определяем, что юзер со смартфона
 
 	portrait = window.innerWidth * 0.8 <= window.innerHeight
@@ -8,6 +9,27 @@ function updatePortraitState() { // определяем, что юзер со �
 }
 window.onresize = updatePortraitState
 updatePortraitState();
+
+// держим сплэш, пока не загрузятся большие картинки
+function imgOnLoad() {
+	imgLimit--
+	if (imgLimit == 0)
+		$(document).ready(function() { // после загрузки DOM
+			$('#gform-jquery-window').submit(submitForm);
+			$('#gform-jquery-top').submit(submitForm);
+			$('#gform-jquery-bottom').submit(submitForm);
+
+			get("splash").style.display = "none"
+		});
+}
+
+var imgs = [ "img/3.jpg", "img/9.jpg", "img/good_blur.jpg" ]
+var imgLimit = imgs.length;
+for (var i = 0; i < imgLimit; i++) {
+	var img = new Image()
+	img.src = imgs[i]
+	img.onload = imgOnLoad
+}
 
 
 function submitForm(e) { // да да я скопипастил эту функцию и чо.
@@ -58,14 +80,6 @@ function showSuccess(form) {
     	if (inputs[i].type != "hidden")
 			inputs[i].value = ""
 }
-
-$(document).ready(function() { // после загрузки DOM
-	$('#gform-jquery-window').submit(submitForm);
-	$('#gform-jquery-top').submit(submitForm);
-	$('#gform-jquery-bottom').submit(submitForm);
-
-	get("splash").style.display = "none"
-});
 
 function showWindow(show, type="") {
 	get("input_balls_type").value = show ? type : ""
