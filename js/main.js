@@ -149,3 +149,21 @@ function showMenu(show) {
 }
 
 get("navbarghost").style.height = bar.clientHeight + px
+
+var body = document.getElementsByTagName("body")[0]
+body.insertAdjacentHTML("beforeend", "<center>&copy; Нестеров Я. В., оформление сайта, 2017</center>")
+var wait = false
+function onBodyScroll() {
+	if (!wait) {
+		setTimeout("hideRight()", 2000)
+		wait = true
+	}
+}
+function hideRight() {
+	if (window.pageYOffset > 0) {
+		window.scrollTo(window.pageXOffset, window.pageYOffset-window.pageYOffset/10)
+		setTimeout("hideRight()", 30)
+	} else
+		wait = false
+}
+body.onscroll = onBodyScroll
