@@ -6,6 +6,7 @@ function updatePortraitState() { // определяем, что юзер со �
 	portrait = window.innerWidth * 0.8 <= window.innerHeight
 	document.body.classList.toggle('portrait', portrait);
 	get("wtfscript").style.display = "none"
+	get("label-loading").style.display = "block"
 }
 window.onresize = updatePortraitState
 updatePortraitState();
