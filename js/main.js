@@ -91,17 +91,19 @@ function moveTo(n) {
 	targetTop = parallax.offsetHeight * n
 	if (!anim){
 		anim = true
-		move(targetTop - parallax.scrollTop)
+		move()
 	}
 }
-function move(left) {
-	if (parallax.scrollTop == targetTop) {
-		anim = false
-		return
-	}
+function move() {
+	left = targetTop - parallax.scrollTop
 	var dif = ceil(left / 10)
 	parallax.scrollTop = parallax.scrollTop + dif
-	setTimeout("move("+(left-dif)+")", 20)
+	left -= dif
+
+	if (parallax.scrollTop != targetTop && left != 0)
+		setTimeout("move()", 20)
+	else
+		anim = false
 }
 
 /* скрытие/отображение навбара */
