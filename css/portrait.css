@@ -39,6 +39,10 @@
 	display: none;
 }
 
+.portrait #icons-table td {
+	background-size: 80%;
+}
+
 .sense {
 	width: 49%;
 	height: 60%;
